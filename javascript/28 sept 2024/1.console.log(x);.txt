@@ -1,0 +1,74 @@
+
+1.console.log(x);
+var x = 5;
+
+undefined
+_________________________
+
+2. let y = 10;if (true) {
+  let y = 20;
+}
+console.log(y);
+
+
+10;
+
+_________________________
+
+5.function test() {  var m = 30;
+  if (true) {
+    let m = 40;
+    console.log(m);
+  }
+  console.log(m);
+}
+test();
+
+40,30
+_________________________
+
+3.var a = 10;if (true) {
+  var a = 20;
+}
+console.log(a);
+
+20;
+_________________________
+
+4.console.log(z);let z = 15;
+undefined
+_________________________
+
+6.function test() {  var a = 50;
+  if (true) {
+    var a = 60;
+    let b = 70;
+    console.log(a, b);
+  }
+  console.log(a, b);
+}
+test();
+
+undefined
+_________________________
+
+7.if (true) {  let a = 10;
+  const b = 20;
+}
+console.log(a, b);
+
+reference error 	
+_________________________
+
+8.var n = 5;{
+  let n = 10;
+  console.log(n);
+}
+console.log(n);
+
+10,5
+_________________________
+9.const obj = { a: 1, b: 2 };obj.a = 10;
+console.log(obj);
+10,2
+_________________________
